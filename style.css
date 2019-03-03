@@ -23,6 +23,12 @@ html, body {
     font-size: 16px;
 }
 
+form {
+    padding: 1em;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/

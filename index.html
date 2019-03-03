@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- first step to a responsive site -->
-    <title>HTML-inputs</title>
+    <title>HTML Inputs Practice</title>
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- Your styles should be called here -->
+    <link href="style.css" rel="main" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,15 +27,42 @@
     <!-- YOUR CONTENT GOES HERE -->
     <h1>Should you buy an unlimited metrocard?</h1>
 
-    <div class="container">
-      <h1>What's your favorite way to commute?</h1>
-      <p>Use the dropdown to select your choice</p>
-    </div>
+    <form>
+      <h2>What's your favorite way to commute?</h2>
+      <p>
+        Select one of the below:
+      </p>
+      <select name="commute pulldown">
+        <option value="Subway">Subway</option>
+        <option value="Bus">Bus</option>
+        <option value="Car">Car</option>
+        <option value="Bike">Bike</option>
+        <option value="Walk">Walk</option>
+      </select>
+    </form>
 
-    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <form id="numbers-commute">
+      <h2>How many times a week do you commute by bus or subway?</h2>
+      <p>
+        Number of times per week: <input type="number" class="times" id="times" max="7" />
+      </p>
+
+    </form>
+
+    <form id="commute-radio">
+      <h2>How long is your daily commute?</h2>
+      <p>Select one of the following:</p>
+      <input type="radio" name="commute" value="15">15 minutes or less<br />
+      <input type="radio" name="commute" value="30">16 to 30 minutes<br />
+      <input type="radio" name="commute" value="45">31 to 45 minutes<br />
+      <input type="radio" name="commute" value="60">46 minutes to an hour<br />
+      <input type="radio" name="commute" value="90">Over an hour<br />
+    </form>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Your javascript should be called here -->
+
   </body>
 
 </html>
